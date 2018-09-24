@@ -1,0 +1,286 @@
+html {
+  background-color: #afafafaf;
+  line-height: 1.7;
+}
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+align-content: center;
+align-items: center;
+text-align: center;
+}
+
+body:after {
+    font-size: 300%;
+    font-weight: bold;
+    position: fixed;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: hsla(1,60%,40%,0.7);
+    color: #fff;
+}
+
+}
+@media only screen and (min-width: 320px) {
+    body:after {
+
+        background-color: hsla(90,60%,40%,0.7);
+    }
+}
+@media only screen and (min-width: 480px) {
+    body:after {
+
+        background-color: hsla(180,60%,40%,0.7);
+    }
+}
+@media only screen and (min-width: 768px) {
+    body:after {
+
+        background-color: hsla(270,60%,40%,0.7);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    body:after {
+
+        background-color: hsla(360,60%,40%,0.7);
+    }
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: .5;
+  padding: .5;
+  text-align: center;
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+div{
+  align-content: center;
+  background: "page.jpg" no-repeat;
+}
+
+
+.section {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 40px;
+  overflow: hidden;
+  align-content: center;
+  
+}
+
+    .row {
+        margin-left: 3%;
+        border-color: #aaaaaa;
+   border-width:5px;  
+    border-style:dotted solid hidden solid; 
+       }
+    [class*="span"] {
+        display: inline;
+        float: left;
+        margin-left: 3%;
+        
+    }
+@media only screen and (min-width: 768px) {
+    .span-one-third {
+        width: 30%;
+    }
+}
+
+.row {
+        margin-left: -3%;
+    }
+    [class*="span"] {
+        display: inline;
+        float: left;
+        margin-left: 3%;
+    }
+@media only screen and (min-width: 768px) {
+    .span-one-third {
+        width: 30%;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+header {
+  padding-top: 20px;
+  color: #fff;
+  background-color: #386eaf;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 165%;
+}
+
+header p {
+  font-size: 90%;
+  margin: 0;
+}
+
+/* Site Navigation */
+.site-nav {
+;
+  margin-top: 20px;
+}
+
+.site-nav ul {
+
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  list-style: none;
+  align-content: center;
+  float: left;
+  margin-right: 3px;
+}
+
+.site-nav a {
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #7c7c7c;
+}
+
+.site-nav a:hover {
+  background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 1023px) {
+  .site-nav li {
+    width: 33.332%;
+    margin-right: 0;
+  }
+
+  .site-nav a {
+    padding: 15px 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav li {
+    width: 50%;
+  }
+}
+
+/* End Site Navigation */
+
+.content-area {
+  background-color: transparent;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .content-area {
+    padding-top: 20px;
+  }
+
+
+@media screen and (max-width: 767px) {
+  .hide-small {
+    display: none;
+  }
+}
+
+
+#demo-nav{ 
+  margin: 0px 0px 0px 150px;
+    }
+#demo-nav ul{
+  width: 500px; 
+    }
+#demo-nav li{
+ width:300px; 
+  height: 200px;
+   float:left;
+   margin:0px;
+    }
+#demo-nav li:nth-child(2),#demo-nav li:nth-child(3){
+  width:300px; 
+  height: 200px; 
+    }
+#demo-nav li a{
+  display:block;
+   background: transparent url(page.jpg) no-repeat; 
+    height: 200px;
+    width:  300px;
+    text-indent: -9999px; 
+    background-position: top left;
+    }
+#demo-nav li:nth-child(2) a{
+  background-position: 0px 0px;
+  }
+#demo-nav li:nth-child(3) a{
+  background-position: -300px 0px;
+    }
+#demo-nav li:nth-child(4) a{
+  background-position: -600px 0px;
+}
+#demo-nav li a:hover{
+  background-position: -200px 0px;
+}
+#demo-nav li:nth-child(2) a:hover{
+  background-position: 0px -200px;
+}
+#demo-nav li:nth-child(3) a:hover{
+  background-position: -300px -200px;
+}
+#demo-nav li:nth-child(4) a:hover{ 
+  background-position: -600px -200px;
+}
+#demo-nav li a.active{ 
+  background-position: 200px 200px;
+}
+
+
+
+
